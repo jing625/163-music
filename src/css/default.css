@@ -65,10 +65,13 @@ body {
     background: #d4d4d4;
 }
 
+#songList-container {
+    flex-grow: 1;
+}
+
 .songList {
     text-align: left;
     border-top: 1px solid #999;
-    flex-grow: 1;
 }
 
 .songList>li {
@@ -97,7 +100,8 @@ body {
 }
 
 /* main */
-.page >main{
+
+.page>main {
     background: #d4d4d4;
 }
 
