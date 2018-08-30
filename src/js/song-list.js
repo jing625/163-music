@@ -45,7 +45,7 @@
       this.view = view
       this.model = model
       this.view.render(this.model.data)
-      this.bindEventHbu()
+      this.bindEventHub()
       this.getAllSongs()
       this.bindEvent()
     },
@@ -64,7 +64,7 @@
         window.eventHub.emit('select',JSON.parse(JSON.stringify(data)))
       })
     },
-    bindEventHbu(){
+    bindEventHub(){
       window.eventHub.on('upload', () => {
         this.view.clearActive()
       })
@@ -72,6 +72,9 @@
         // songs = ['ADDR 108']
         this.model.data.songs.push(songData)
         this.view.render(this.model.data)
+      })
+      window.eventHub.on('new',()=>{
+        this.view.clearActive()
       })
     },
     getAllSongs(){
