@@ -32,7 +32,7 @@
       return query.find().then((songs) => {
 
         this.data.songs = songs.map((song)=>{
-          return{id: song.id,...song.attributes}
+          return Object.assign({id: song.id},song.attributes)
         })
         return songs
       })
