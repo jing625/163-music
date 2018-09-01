@@ -59,6 +59,7 @@ body {
 .newSong {
     text-align: center;
     padding: 10px;
+    cursor: pointer;
 }
 
 .newSong.active {
@@ -67,6 +68,7 @@ body {
 
 #songList-container {
     flex-grow: 1;
+    overflow: auto;
 }
 
 .songList {
@@ -77,6 +79,7 @@ body {
 .songList>li {
     border-bottom: 1px solid #ddd;
     padding: 10px;
+    cursor: pointer;
 }
 
 .songList>li.active {
