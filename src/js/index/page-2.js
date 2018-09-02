@@ -48,10 +48,8 @@
       return query.find().then((songs) => {
         this.data.songs = songs.map((song) => {
           return Object.assign({id: song.id}, song.attributes)
-          console.log(3)
         })
         return songs
-        console.log(4)
       })
     }
   }
@@ -62,7 +60,6 @@
       this.model = model
       this.bindEventHub()
       this.model.find().then(() => {
-        console.log(1)
         this.view.render(this.model.data)
       })
     },

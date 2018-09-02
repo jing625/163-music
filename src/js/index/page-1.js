@@ -34,7 +34,7 @@
       let script1 = document.createElement('script')
       script1.src = './js/index/page-1-1.js'
       script1.onload = function () {
-        console.log('模块一加载完毕')
+        console.log('模块1加载完毕')
       }
       document.body.appendChild(script1)
     },

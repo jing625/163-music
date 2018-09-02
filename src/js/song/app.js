@@ -7,7 +7,6 @@
     render(data) {
       let {song, status} = data
       this.$el.find('.filter').css('background-image', `url(${song.cover})`)
-      console.log(this.$el.find('.filter'))
       this.$el.find('img.cover').attr('src', song.cover)
       if (this.$el.find('audio').attr('src') !== song.url) {
         let audio = this.$el.find('audio').attr('src', song.url).get(0)
