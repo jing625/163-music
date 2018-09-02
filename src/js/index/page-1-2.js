@@ -3,6 +3,7 @@
     el: 'section.songs',
     template: `
           <li>
+          <a href="./song.html?id={{song.id}}">
             <h3>{{song.name}}</h3>
             <p>
               <svg class="icon icon-sq">
@@ -10,11 +11,12 @@
               </svg>
               {{song.singer}}
             </p>
-            <a class="playButton" href="./song.html?id={{song.id}}">
+            <div class="playButton">
               <svg class="icon icon-play">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use>
               </svg>
-            </a>
+            </div>
+          </a>
           </li>
       `,
     init() {
